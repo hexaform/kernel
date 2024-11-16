@@ -1,0 +1,33 @@
+{
+    "name": "@hexaform/kernel",
+    "version": "1.2.0",
+    "description": "Hexaform kernel",
+    "main": "src/index.ts",
+    "scripts": {
+        "reflect": "reflect.parse > cache/.reflection-data.json && reflect.paramtypes cache/.reflection-data.json src/paramtypes.ts",
+        "build": "rm -rf dist/* && tsc && cp src/package.dist.json dist/package.json && cp README.md dist/README.md",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/hexaform/kernel.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hexaform/kernel/issues"
+    },
+    "homepage": "https://github.com/hexaform/kernel#readme",
+    "devDependencies": {
+        "@types/node": "^22.7.5",
+        "typescript": "^5.6.3"
+    },
+    "peerDependencies": {
+        "@hexaform/configuration": "^1.1.0",
+        "@hexaform/container": "^1.1.0",
+        "@hexaform/cqrs": "^1.0.0",
+        "@hexaform/logger": "^1.1.0",
+        "cors": "^2.8.5",
+        "express": "^4.21.0"
+    }
+}

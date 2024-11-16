@@ -1,0 +1,24 @@
+{
+    "name": "@hexaform/kernel",
+    "version": "1.2.0",
+    "description": "Kernel for Hexaform applications",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/hexaform/kernel.git"
+    },
+    "author": "Igor Stojadinović <mightytroll@gmail.com> (https://www.linkedin.com/in/igorstojadinovic/)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hexaform/kernel/issues"
+    },
+    "homepage": "https://github.com/hexaform/kernel#readme",
+    "peerDependencies": {
+        "@hexaform/configuration": "^1.1.0",
+        "@hexaform/container": "^1.1.0",
+        "@hexaform/cqrs": "^1.0.0",
+        "@hexaform/logger": "^1.1.0",
+        "cors": "^2.8.5",
+        "express": "^4.21.0"
+    }
+}
